@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/TON_ORG/gitops-repo.git
+    repoURL: https://github.com/zeddinikhaled/gitops-repo.git
     targetRevision: dev
     path: apps/myapp/kustomize/overlays/dev
   destination:
