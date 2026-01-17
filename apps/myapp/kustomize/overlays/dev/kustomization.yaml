@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: dev
+
+resources:
+  - ../../base
+
+helmCharts:
+  - name: myapp
+    path: ../../../chart
+    releaseName: myapp
+    namespace: dev
+    valuesInline:
+      replicaCount: 1
+      image:
+        tag: latest
+
